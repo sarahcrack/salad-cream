@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Salad Cream</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to top,
+          rgb(255, 255, 255) 0%,
+          rgba(235, 214, 150, 0.8) 100%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(44, 101, 44);
+        font-size: 3em;
+        margin: 0 auto;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid rgb(44, 101, 44);
+        line-height: 50px;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: rgb(44, 101, 44);
+        color: rgb(235, 214, 150);
+        font-size: 26px;
+      }
+
+      h3 {
+        padding: 10px 0px 0px 0px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 17px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        background: rgb(44, 101, 44);
+        color: rgb(235, 214, 150);
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(83, 174, 45);
+        font-weight: bolder;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background-color: rgb(235, 214, 150);
+        color: rgb(44, 101, 44);
+        font-weight: bolder;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      .bottle {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 275px;
+      }
+
+      .ing {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 225px;
+        padding: 15px;
+      }
+
+      .jar {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 30px;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: monospace;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        😋 <br />
+        Salad Cream
+      </h1>
+      <h2>The BEST sauce in the world!</h2>
+      <img
+        src="https://d167y3o4ydtmfg.cloudfront.net/krafts/303/1578388183753_540x540.png"
+        alt="salad cream"
+        class="bottle"
+      />
+      <h3>What is Salad Cream?</h3>
+      <p>
+        Salad cream was the first product developed by Heinz specifically for
+        the UK market and took eight years to perfect, finally appearing in
+        grocers' shops in 1914. <br />
+        After a century of being a must-have ingredient in lunchboxes and picnic
+        hampers up and down the country, Salad Cream is still the 'Original
+        Tangy Taste' that makes it one of Britain's best-loved sauces. You can
+        of course spruce up your salad, but you can also boost those burgers,
+        add zest to your chicken breast and reinvent the traditonal egg 'mayo'
+        sandwich with a delicious dollop of Salad Cream.
+      </p>
+
+      <img
+        src="https://d36rz30b5p7lsd.cloudfront.net/kraftbrands/heinzcouk/sauces/product/images/SC%20Original%20Ingredients.png"
+        alt="Ingredients"
+        class="ing"
+      />
+
+      <h3>Where to buy Salad Cream & Recipes</h3>
+      <p>
+        Salad Cream is available in all major supermarkets in the UK and you can
+        find out more on the
+        <a
+          href="https://www.heinz.co.uk/beanz/salad-cream/product/100185200023/salad-cream"
+          target="blank"
+        >
+          <em>Heinz website</em>.
+        </a>
+        It is also fairly easy to find in Canada and Australia. In the U.S., it
+        is mostly limited to specialty stores. If you cannot get hold of it or
+        would like to try making your own, you can find many recipes online,
+        including this one from the
+        <a href="https://noseychef.com/2020/05/18/salad-cream/" target="blank">
+          <em>Nosey Chef</em> </a
+        >, as well as a spiced version of the original sauce on
+        <a
+          href="https://www.bbcgoodfood.com/recipes/spiced-salad-cream"
+          target="blank"
+        >
+          <em>BBC Good Food</em>.
+        </a>
+      </p>
+
+      <img
+        class="jar"
+        src="https://www.kraftheinzcompany.com/pressroom/images/view/glass_hsc_original_285g.gif"
+        alt="jar"
+      />
+
+      <h3>Salad Cream vs. Mayonnaise 🤔</h3>
+      <p>
+        Like mayonnaise, salad cream contains egg yolks, vegetable oil and
+        mustard - but the principal difference lies in the amount of vinegar, as
+        well as the water, which helps to thin down the sauce to a pouring
+        consistency. There is an age-old debate as to whether salad cream or
+        mayonnaise is the tastiest - what do you think?
+      </p>
+
+      <button><strong>Vote Now</strong></button>
+
+      <p class="footer">This page was built by Sarah Crack</p>
+
+      <script>
+        function voteNow() {
+          let firstName = prompt("What is your first name?");
+          let sauce = prompt("Salad Cream or Mayo?");
+          sauce = sauce.toLowerCase();
+          sauce = sauce.trim();
+          sauce = sauce.replace("saladcream", "salad cream");
+
+          if (sauce === "salad cream") {
+            alert(`Correct ${firstName}! Salad Cream is the BEST!😋`);
+          } else {
+            alert(`Think again ${firstName}! Salad Cream is the BEST!😍`);
+          }
+        }
+        let voteNowButton = document.querySelector("button");
+        voteNowButton.addEventListener("click", voteNow);
+      </script>
+    </div>
+  </body>
+</html>
