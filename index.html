@@ -4,109 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Salad Cream</title>
-    <style>
-      body {
-        background-image: linear-gradient(
-          to top,
-          rgb(255, 255, 255) 0%,
-          rgba(235, 214, 150, 0.8) 100%
-        );
-      }
-
-      h1 {
-        text-align: center;
-        color: rgb(44, 101, 44);
-        font-size: 3em;
-        margin: 0 auto;
-      }
-
-      h2 {
-        text-align: center;
-        border: 1px solid rgb(44, 101, 44);
-        line-height: 50px;
-        padding: 10px;
-        border-radius: 4px;
-        background-color: rgb(44, 101, 44);
-        color: rgb(235, 214, 150);
-        font-size: 26px;
-      }
-
-      h3 {
-        padding: 10px 0px 0px 0px;
-      }
-
-      p {
-        line-height: 1.5;
-        font-size: 17px;
-      }
-
-      button {
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        background: rgb(44, 101, 44);
-        color: rgb(235, 214, 150);
-        font-size: 20px;
-        padding: 10px 15px;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        transition: all 200ms ease-in-out;
-      }
-
-      a {
-        text-decoration: none;
-        color: rgb(83, 174, 45);
-        font-weight: bolder;
-      }
-
-      button:hover {
-        opacity: 0.9;
-        cursor: pointer;
-        background-color: rgb(235, 214, 150);
-        color: rgb(44, 101, 44);
-        font-weight: bolder;
-      }
-
-      a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
-
-      .container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 30px 60px;
-      }
-
-      .bottle {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        width: 275px;
-      }
-
-      .ing {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        width: 225px;
-        padding: 15px;
-      }
-
-      .jar {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        width: 30px;
-      }
-
-      .footer {
-        text-align: center;
-        font-family: monospace;
-        font-size: 15px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -182,30 +81,17 @@
 
       <button><strong>Vote Now</strong></button>
 
-          <p class="footer"> This project was coded by
-            <a href="https://www.linkedin.com/in/sarah-crack-b2209195/" target="_blank">Sarah Crack</a>
-            and is
-            <a href="https://github.com/sarahcrack" target="_blank">open-sourced</a>
-            🤩
-          </p>
-
-      <script>
-        function voteNow() {
-          let firstName = prompt("What is your first name?");
-          let sauce = prompt("Salad Cream or Mayo?");
-          sauce = sauce.toLowerCase();
-          sauce = sauce.trim();
-          sauce = sauce.replace("saladcream", "salad cream");
-
-          if (sauce === "salad cream") {
-            alert(`Correct ${firstName}! Salad Cream is the BEST!😋`);
-          } else {
-            alert(`Think again ${firstName}! Salad Cream is the BEST!😍`);
-          }
-        }
-        let voteNowButton = document.querySelector("button");
-        voteNowButton.addEventListener("click", voteNow);
-      </script>
+      <p class="footer">
+        This project was coded by
+        <a
+          href="https://www.linkedin.com/in/sarah-crack-b2209195/"
+          target="_blank"
+          >Sarah Crack</a
+        >
+        and is
+        <a href="https://github.com/sarahcrack" target="_blank">open-sourced</a>
+        🤩
+      </p>
     </div>
   </body>
 </html>
